@@ -1,0 +1,133 @@
+<template>
+  <div >
+    <img preload  class="imgTerms" src="/Terms/TermiCondiciones.jpg" alt="TerminosyCondiciones"/>
+    <h1 style="display: none;">Términos y Condiciones</h1>
+    <div class="cuerpo">
+      <div class="policy-links">
+        <ul>
+          <li><a >Términos y Condiciones</a></li>
+          <li><a href="/PoliticasdePrivacidad">Políticas de Privacidad</a></li>
+          <li><a href="/TerminosdePago">Términos de Pago</a></li>
+          <li><a href="/PoliticasdeCancelacion">Políticas de Cancelación</a></li>
+        </ul>
+      </div>
+      <div class="terminos">
+        <iframe class="iframterms" src="https://docs.google.com/document/d/e/2PACX-1vSXXVJEQnDq3fdRrE76FLD60f5gH8hQEDhgoF-he3aa_ZlsdvGjvic02uoFU-8Fb4i-9vyvHmyleptO/pub?embedded=true"></iframe>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  layout: "default",
+  head() {
+    return {
+      title: "Rutero |  Términos y Condiciones",
+      meta: [
+        {
+          hid: "",
+          name: "",
+          content: "",
+        },
+        {
+          hid: "og:url",
+          property: "og:url",
+          content: "https://www.rutero.cl/TerminosyCondiciones",
+        },
+      ],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://www.rutero.cl/TerminosyCondiciones'
+        }
+      ],
+    };
+  }
+}
+</script>
+
+<style scoped>
+.policy-links {
+  height: 100%; /* Se reduce el alto del div para que no se salga de la pantalla en móviles */
+  padding: 3rem 1rem;
+  padding-left: 2rem;
+
+  @media screen and (max-width: 768px) {
+    position: inherit;
+    padding-top: 2vh;
+    padding-bottom: 0vh;
+    font-size: small;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+li:nth-child(1) {
+  list-style-type: disclosure-closed;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover{
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 1px solid #333;
+}
+
+.imgTerms{
+  height: auto; /* Se usa "auto" para que el alto se ajuste automáticamente al ancho */
+  max-width: 100%; /* Se usa "max-width" en lugar de "width" para que la imagen no se salga del ancho de la pantalla */
+  @media screen and (max-width: 768px) {
+    margin-top: 3vh;
+  }
+}
+.cuerpo{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.terminos {
+  margin: 2rem; /* Se usa "margin" en lugar de "margin-left" para que se ajuste en diferentes tamaños de pantalla */
+  height: auto;  /*Se usa "auto" para que la altura se ajuste automáticamente al ancho */
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    height: 50vh;
+    width: 100%;
+    margin: 0rem;
+  }
+}
+
+.iframterms{
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+/* Se ajusta el estilo en pantallas de computadora */
+  .cuerpo {
+    width: 76%;
+    margin: auto;
+    justify-content: center;
+    flex-direction: row-reverse;; /* Se vuelve a cambiar la dirección del eje para que se ajuste en pantallas más grandes */
+  }
+
+  .terminos {
+    margin: 2rem 0rem;
+    height: 36rem;
+    width: 77%;
+  }
+}
+</style>

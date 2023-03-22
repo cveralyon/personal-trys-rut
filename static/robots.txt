@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /image_uploader
+Disallow: /Admin/
+Disallow: /Blogs/
+Disallow: /User/Reservations/
+Disallow: /User/Profile/
+Disallow: /MercadoPago/
+Disallow: /successreservation
+Disallow: /Register/successfullyRegistered
+
+Sitemap: https://www.rutero.cl/sitemap.xml
