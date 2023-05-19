@@ -1,4 +1,4 @@
-# rutero-front :earth_americas:
+# news-things :earth_americas:
 
 VSCode recommended extensions for rutero-front:
 
